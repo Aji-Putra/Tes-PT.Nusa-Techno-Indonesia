@@ -43,7 +43,8 @@ DB_USERNAME=username_anda
 DB_PASSWORD=password_anda
 
 # 6. Jalankan migrasi dan seeder (jika ada)
-php artisan migrate --seed
+php artisan migrate
+php artisan db:seed ProdukSeeder
 
 # 7. Jalankan aplikasi
 php artisan serve
